@@ -14,14 +14,19 @@ addItemButton.addEventListener('click', () => {
         alert("please enter something on the input field")
 
     } else if (userInput.value != '') {
+
+
+        // show the random color in selected items
         let color = Math.floor(Math.random() * colors.length)
-        console.log(color)
+
+
         const li = document.createElement('li')
         const span = document.createElement('span')
         const btn = document.createElement('span') 
-    
+
+        btn.classList.add('delete-button')
+        console.log(btn)
         btn.classList.add("material-symbols-outlined")
-        btn.style.color = 'rgb(143, 126, 172)'
         btn.style.cursor = 'pointer'
         // btn.style.border = '1px solid rgb(143, 126, 172)'
         btn.style.borderRadius = '50%'

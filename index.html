@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shopping List simple js app</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
         <script src="./js/app.js" defer></script>
     </head>
     <body>
         <div id="container">
             <div class="header">
-                <h1>Shopping Cart</h1>
+                <h1>Shopping Cart<span class="material-symbols-outlined icon">shopping_cart</span></h1>
             </div>
             <div id="input-section">
                 <div class="input-field">
@@ -18,7 +19,12 @@
                     <input class="input" type="text" id="userInput" placeholder="select your pick">
                 </div>
                 
-                <button class="input" id="add-me">Add item</button>
+                <button class="input" id="add-me">
+                    Add item
+                    <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                </button>
             </div>
 
             <div id="output-section">

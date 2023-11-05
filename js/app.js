@@ -52,9 +52,12 @@ addItemButton.addEventListener('click', () => {
         if (listRecord.length >= 4) {
             footer.appendChild(resetButton)
             resetButton.classList.add('reset-button')
-            resetButton.classList.add('input')
             
-            resetButton.textContent = 'reset'  
+            resetButton.innerHTML = '<span class="material-symbols-outlined">restart_alt</span>'  
+            resetButton.style.color = 'rgb(143, 126, 172)'
+            resetButton.style.backgroundColor = 'transparent'
+            resetButton.style.border  = 'none'
+            
             
             resetButton.addEventListener('click', () => {
                 outputSection.removeChild(userList)

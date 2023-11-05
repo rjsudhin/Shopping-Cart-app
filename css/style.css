@@ -102,14 +102,11 @@ ol li {
     color:rgb(140, 75, 201)
 }
 
-li .delete-button:hover {
+footer .delete-button:hover {
     color: #fff;
+    background-color: green;
 }
 
-/* reset button in footer */
-.reset-button:hover {
-    color: red;
-}
 
 button {
     display: block;
@@ -142,6 +139,21 @@ footer {
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
 }
+
+footer button span:hover {
+    color: #fff
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(143, 126, 172);
+}
+
 
 @media(max-width: 650px) {
     

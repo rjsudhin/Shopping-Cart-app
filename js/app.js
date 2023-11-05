@@ -1,5 +1,5 @@
 const outputSection = document.querySelector('#output-section')
-const userList = document.createElement('ol')
+const userList = document.querySelector('ol')
 const userInput = document.querySelector('input')
 const addItemButton = document.querySelector('#add-me')
 const footer = document.querySelector('footer')
@@ -13,9 +13,6 @@ addItemButton.addEventListener('click', () => {
         alert("please enter something on the input field")
 
     } else if (userInput.value != '') {
-
-        
-
         const li = document.createElement('li')
         const span = document.createElement('span')
         const btn = document.createElement('button')
@@ -36,6 +33,8 @@ addItemButton.addEventListener('click', () => {
         if (listRecord.length >= 4) {
             footer.appendChild(resetButton)
             resetButton.classList.add('reset-button')
+            resetButton.classList.add('input')
+            
             resetButton.textContent = 'reset'  
             
             resetButton.addEventListener('click', () => {

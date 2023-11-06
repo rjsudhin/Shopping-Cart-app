@@ -98,13 +98,14 @@ ol li {
     width: 60%;
     display: flex;
     justify-content: space-between;
-    vertical-align: middle;
+    align-items: center;
     color:rgb(140, 75, 201)
 }
 
-footer .delete-button:hover {
+.delete-button:hover {
     color: #fff;
-    background-color: green;
+    padding: 0;
+    
 }
 
 

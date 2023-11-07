@@ -59,11 +59,16 @@ addItemButton.addEventListener('click', () => {
             resetButton.style.border  = 'none'
             
             
-            resetButton.addEventListener('click', () => {
-                outputSection.removeChild(userList)
-                footer.removeChild(resetButton)
-            })
         }
+
+        function removeListItems() {
+            userList.removeChild(li)
+        }
+
+        resetButton.addEventListener('click', removeListItems)
+        resetButton.addEventListener('click', () => {
+            footer.removeChild(resetButton)
+        })
 
         
 

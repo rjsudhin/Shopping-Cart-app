@@ -98,7 +98,7 @@ ol li {
     width: 60%;
     display: flex;
     justify-content: space-between;
-    vertical-align: middle;
+    align-items: center;
     color:rgb(140, 75, 201)
 }
 

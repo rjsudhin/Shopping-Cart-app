@@ -5,7 +5,7 @@ const addItemButton = document.querySelector('#add-me')
 const footer = document.querySelector('footer')
 const resetButton = document.createElement('button')
 const listRecord = []
-const colors = ['orange', 'skyblue', 'pink', '#fff']
+const colors = ['orange', 'red', 'pink', '#fff']
 
 addItemButton.addEventListener('click', () => {
     const cartItems = userInput.value
@@ -57,8 +57,6 @@ addItemButton.addEventListener('click', () => {
             resetButton.style.color = 'rgb(143, 126, 172)'
             resetButton.style.backgroundColor = 'transparent'
             resetButton.style.border  = 'none'
-            
-            
         }
 
         function removeListItems() {

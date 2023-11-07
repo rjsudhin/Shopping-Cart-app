@@ -28,7 +28,6 @@ addItemButton.addEventListener('click', () => {
         console.log(btn)
         btn.classList.add("material-symbols-outlined")
         btn.style.cursor = 'pointer'
-        // btn.style.border = '1px solid rgb(143, 126, 172)'
         btn.style.borderRadius = '50%'
         btn.style.padding = '2px'
         btn.style.margin = '3px'

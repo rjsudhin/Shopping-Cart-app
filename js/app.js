@@ -66,13 +66,14 @@ addItemButton.addEventListener('click', () => {
         resetButton.addEventListener('click', removeListItems)
         resetButton.addEventListener('click', () => {
             footer.removeChild(resetButton)
+            userInput.value = ""
         })
 
-        
+        userInput.focus()
 
     }
 
-    userInput.focus()
+    
 })
 
 

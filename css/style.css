@@ -166,6 +166,10 @@ footer a:hover {
         flex: 1 1 100%;
     }
 
+    ol li {
+        width: 100%;
+    }
+
     #add-me {
         flex: 1 1 100%;
         margin-top: 1em;

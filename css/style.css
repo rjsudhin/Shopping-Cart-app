@@ -72,7 +72,7 @@ h1 .icon {
     border: none;
     background-color: transparent;
     border-bottom: 2px solid rgb(143, 126, 172);
-    color: rgb(143, 126, 172);
+    color: orange;
     width: 100%;
 }
 
@@ -102,9 +102,10 @@ ol li {
     color:rgb(140, 75, 201)
 }
 
-footer .delete-button:hover {
+.delete-button:hover {
     color: #fff;
-    background-color: green;
+    padding: 0;
+    
 }
 
 
@@ -144,11 +145,15 @@ footer {
 }
 
 footer button span:hover {
-    color: #fff
+    color: #fff;
+    background-color: rgb(140, 75, 201);
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgb(140, 75, 201);
 }
 
 footer a {
-    color: #fff;
+    color: orange;
     text-decoration: none;
 }
 
@@ -162,6 +167,10 @@ footer a:hover {
     
     .input-field {
         flex: 1 1 100%;
+    }
+
+    ol li {
+        width: 100%;
     }
 
     #add-me {

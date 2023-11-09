@@ -5,7 +5,7 @@ const addItemButton = document.querySelector('#add-me')
 const footer = document.querySelector('footer')
 const resetButton = document.createElement('button')
 const listRecord = []
-const colors = ['orange', 'red', 'pink', '#fff']
+const colors = ['lightsalmon', 'lightgreen', 'lightseagreen', '#fff']
 
 addItemButton.addEventListener('click', () => {
     const cartItems = userInput.value
@@ -28,7 +28,6 @@ addItemButton.addEventListener('click', () => {
         console.log(btn)
         btn.classList.add("material-symbols-outlined")
         btn.style.cursor = 'pointer'
-        // btn.style.border = '1px solid rgb(143, 126, 172)'
         btn.style.borderRadius = '50%'
         btn.style.padding = '2px'
         btn.style.margin = '3px'
@@ -66,13 +65,14 @@ addItemButton.addEventListener('click', () => {
         resetButton.addEventListener('click', removeListItems)
         resetButton.addEventListener('click', () => {
             footer.removeChild(resetButton)
+            userInput.value = ""
         })
 
-        
+        userInput.focus()
 
     }
 
-    userInput.focus()
+    
 })
 
 

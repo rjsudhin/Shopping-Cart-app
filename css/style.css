@@ -125,6 +125,9 @@ button {
     align-items: center;
 }
 
+#add-me:active {
+    background-color: rgb(170, 112, 224);
+}
 #add-me:hover {
     box-shadow: 0 0 10px 2px rgb(140, 75, 201);
 }
